@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import '../styles/Result.css';
 import { Link } from 'react-router-dom';
 import ResultTable from './ResultTable';
@@ -21,7 +21,7 @@ export default function Result() {
         username : userId,
         attempts,
         points: earnPoints,
-        achived : flag ? "Passed" : "Failed" });
+        achieved : flag ? "Passed" : "Failed" });
 
     function onRestart(){
         dispatch(resetAllAction())
