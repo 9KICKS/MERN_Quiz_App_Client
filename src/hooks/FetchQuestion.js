@@ -1,9 +1,9 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from "react"
 import { useDispatch } from "react-redux";
 import { getServerData } from "../helper/helper";
-import * as Action from '../redux/question_reducer';
+import * as Action from '../redux/question_reducer'
 
-export const useFetchQestion = () => {
+export const useFetchQuestion = () => {
     const dispatch = useDispatch();
     const [getData, setGetData] = useState({ isLoading : false, apiData : [], serverError: null});
 
